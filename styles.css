@@ -1,0 +1,813 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: lightblue;
+}
+
+/* Body styles the background color of the page */
+.rainbow-letters {
+    font-size: 40px;
+    font-family: 'Helvetica', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 3px ridge silver;
+    display: flex;
+    /* makes the container a flexbox */
+    border-radius: 3px;
+    /* rounds the corners */
+    background-color: navy;
+    box-shadow: 5px 5px 3px Lightgray;
+    /* adds a shadow effect */
+    padding: 5px;
+    /* adds padding around the text */
+    justify-content: center;
+    /* centers the text horizontally */
+    align-items: center;
+    /* centers the text vertically */
+}
+
+/* rainbow-letters class styles the text with a rainbow effect */
+.rainbow-letters span:nth-child(10n + 1) {
+    /* first letter */
+    color: #E40303;
+    /* red based color */
+}
+
+.rainbow-letters span:nth-child(10n + 2) {
+    /* second letter */
+    color: #FF8C00;
+    /* orange based color */
+}
+
+.rainbow-letters span:nth-child(10n + 3) {
+    /* third letter */
+    color: #008026;
+    /* green based color */
+}
+
+.rainbow-letters span:nth-child(10n + 4) {
+    /* fourth letter */
+    color: #004CFF;
+    /* light blue based color */
+}
+
+.rainbow-letters span:nth-child(10n + 5) {
+    /* fifth letter */
+    color: hsl(252, 63%, 50%);
+    /* light purple based color */
+}
+
+.rainbow-letters span:nth-child(10n + 6) {
+    /* sixth letter */
+    color: hsl(290, 54%, 25%);
+    /* dark purple based color */
+}
+
+.rainbow-letters span:nth-child(10n + 7) {
+    /* seventh letter */
+    color: hsl(1, 83%, 53%);
+    /* red based color */
+}
+
+.rainbow-letters span:nth-child(10n + 8) {
+    /* eighth letter */
+    color: #ffc107;
+    /* amber based color */
+}
+
+.rainbow-letters span:nth-child(10n + 9) {
+    /* ninth letter */
+    color: #00bcd4;
+    /* cyan based color */
+}
+
+.rainbow-letters span:nth-child(10n + 10) {
+    /* tenth letter */
+    color: #ff00ff;
+    /* magenta based color */
+}
+
+/* Sweetie4U Banner styles */
+.banner-heading {
+    padding-left: 1rem;
+    /* adds padding to the left */
+    align-items: center;
+    /* centers items vertically */
+    text-align: center;
+    /* centers text horizontally */
+    justify-content: center;
+    /* centers items horizontally */
+    position: relative;
+    /* allows absolute positioning of children */
+    font-size: 55px;
+    font-weight: bolder;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, violet,
+            indigo, blue, green, yellow, orange, red);
+    /* creates a gradient background */
+    -webkit-background-clip: text;
+    /* clips the background to the text */
+    background-clip: text;
+    /* clips the background to the text */
+    color: transparent;
+    /* makes the text transparent */
+    display: flex;
+    /* makes the container a flexbox */
+    z-index: 10;
+    /* sets the stacking order */
+    height: auto;
+    width: 100%;
+    opacity: 1;
+    /* sets the opacity */
+    border: 5px ridge teal;
+    box-shadow: 5px 5px 5px Seagreen;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background-color: lemonchiffon;
+}
+
+
+/* Sweetie4U Navigation Bar */
+.sweetie4u-navigation {
+    opacity: 0.9;
+    /* sets the opacity */
+    backdrop-filter: blur(5px);
+    /* adds a blur effect */
+    width: 100%;
+    /* sets the width to 100% of the viewport */
+    height: auto;
+    /* allows height to adjust based on content */
+    margin: 0 auto;
+    /* centers the navigation bar */
+    padding: 10px;
+    /* adds padding around the navigation bar */
+    display: flex;
+    /* makes the container a flexbox */
+    justify-content: center;
+    /* centers items horizontally moves to middle position */
+    align-items: center;
+    /* centers items vertically */
+    max-width: fit-content;
+}
+
+/* Sweetie4U Navigation Bar styles */
+.sweetie4u-navigation ul li {
+    border: 3px ridge blue;
+    box-shadow: 3px 3px 3px Seagreen;
+    display: flex;
+    /* makes the container a flexbox */
+    border-top-left-radius: 3px;
+    /* rounds the top left corner */
+    list-style-type: none;
+    /* removes bullet points */
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: blueviolet;
+    background-color: lemonchiffon;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    /* centers items horizontally */
+    padding: 10px;
+    align-items: center;
+    /* centers items vertically */
+    text-align: center;
+    /* centers text horizontally */
+    align-self: center;
+    /* centers items within the flex container */
+}
+
+/* Sweetie4U Navigation Bar styles */
+.sweetie4u-navigation ul {
+    border: 3px ridge #00674F;
+    box-shadow: 3px 3px 3px Seagreen;
+    border-radius: 3px;
+    /* rounds the corners */
+    padding: 20px;
+    /* adds padding around the list */
+    display: inline-flex;
+    /* makes the container a flexbox */
+    height: auto;
+    width: auto;
+}
+
+/* Sweetie4U Navigation Bar styles */
+.sweetie4u-navigation a:link {
+    text-decoration: underline;
+    /* underlines the link */
+    border: 3px solid Skyblue;
+    box-shadow: 5px 5px 5px orange;
+}
+
+/* Sweetie4U Navigation Bar styles */
+.sweetie4u-navigation a:hover {
+    text-decoration: none;
+    color: blueviolet;
+    border: none;
+}
+
+/* a:active should be a separate selector, not nested */
+.sweetie4u-navigation a:active {
+    text-decoration: none;
+    color: crimson;
+    border: none;
+}
+
+/* Sweetie4U Navigation Bar styles */
+#flex-container-about-us {
+    background-image: url("./1.jpg");
+    background-size: cover;
+    /* covers the entire container */
+    background-repeat: no-repeat;
+    /* prevents repeating the background image */
+    display: flex;
+    /* makes the container a flexbox */
+    font-family: Arial, sans-serif;
+    background-color: peachpuff;
+    color: #0047AB;
+    /* sets the text color to a shade of blue-cobalt blue */
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: 5px ridge #32527b;
+    /* sets the border color to a shade of blue- muted or desaturated blue */
+    border-radius: 3px;
+    /* rounds the corners */
+    box-shadow: 5px 5px 5px #FA8072;
+    /* adds a shadow effect */
+    /* sets the shadow color to a shade of red- light coral */
+    width: auto;
+    height: auto;
+    padding: 75px;
+    justify-content: center;
+    /* centers items horizontally */
+    align-content: center;
+    /* centers items vertically */
+    align-items: center;
+    /* centers items vertically */
+    opacity: 1;
+    /* sets the opacity */
+    /* sets the opacity to 1 (fully opaque) */
+    margin: auto auto;
+
+}
+
+#flex-container-about-us ul {
+    list-style-type: none;
+}
+
+/* Flexbox styles for the about us section */
+.flex-child1-our-history,
+.flex-child2-our-founder {
+    flex: 1;
+    /* allows the flex items to grow and shrink */
+    width: auto;
+    font-family: 'Helvetica', sans-serif;
+    background-color: lemonchiffon;
+    font-weight: bold;
+    margin-right: auto;
+    border: 9px ridge;
+    border-radius: 3px;
+    /* rounds the corners */
+    border-color: #ffb3ba #ffdfba #baffc9 #bae1ff;
+    /* sets the border color to a pastel rainbow-#ffb3ba (Light Pink), #ffdfba (Light Peach), #baffc9 (Light Mint), and #bae1ff (Light Aqua) */
+    box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+    /* adds a shadow effect with multiple colors blue, red, and green */
+}
+
+/* Flexbox styles for the about us section */
+.flex-child1-our-history img,
+.image-jar img {
+    max-width: 100%;
+    /* sets the maximum width to 100% of the container */
+    /* ensures the image does not exceed the container width */
+    height: auto;
+    display: block;
+    /* makes the image a block element */
+    /* allows the image to take up the full width of the container */
+    margin: 0 auto;
+    filter: contrast(100%);
+    /* sets the contrast to 100% */
+    /* ensures the image has normal contrast */
+    border: 1px ridge #A7ABDE;
+    /* sets the border color to a shade of blue- light blue */
+    box-shadow: 5px 5px 5px #FFA5D6;
+    /* adds a shadow effect with a shade of pink- light pink */
+}
+
+/* Flexbox styles for the about us section */
+#flex-header {
+    display: flex;
+    /* makes the container a flexbox */
+    align-items: flex-start;
+    /* aligns both to the top */
+    justify-content: flex-start;
+    /* both at the left, or use space-between for ends */
+    width: 100%;
+    padding: 0.5rem;
+}
+
+/* Flexbox styles for the about us section */
+.logo-img {
+    height: 100px;
+    /* sets height of logo */
+    width: auto;
+    margin-left: 1.5rem;
+    /* space between text and logo */
+    border: 1px solid #8e3ccb;
+    /* sets the border color to a shade of purple- light purple */
+    box-shadow: 3px 3px 3px #fe7e0f;
+    /* adds a shadow effect with a shade of orange- light orange */
+}
+
+/* Flexbox styles for the about us section */
+.rainbow {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to left, violet,
+            indigo, blue, green, yellow, orange, red);
+    /* creates a gradient background */
+    -webkit-background-clip: text;
+    /* clips the background to the text */
+    /* ensures the background is only visible within the text */
+    background-clip: text;
+    /* clips the background to the text */
+    color: transparent;
+    /* makes the text transparent */
+    /* ensures the text is not visible */
+    font-size: 2rem;
+}
+
+.rainbow a {
+    color: inherit;
+    text-decoration: underline;
+    /* or none, as you prefer */
+    /* sets the text color to inherit from the parent */
+    /* ensures the link color matches the text color */
+    font-weight: bold;
+    /* makes the link text bold */
+    transition: color 0.3s ease;
+    /* adds a transition effect for color changes */
+    font-style: italic;
+    /* makes the link text italic */
+    text-underline-offset: 4px;
+    /* optional: moves underline lower for better look */
+    text-decoration-color: #32527b;
+    /* or any color you want for the underline */
+}
+
+.container {
+    display: grid;
+    /* makes the container a grid */
+    /* allows for grid layout */
+    grid-template-columns: auto auto auto;
+    /* creates three columns of equal width */
+    /* each column will take up the available space */
+    grid-template-rows: repeat(4, auto);
+    /* creates four rows of equal height */
+    /* each row will take up the available space */
+    gap: 10px;
+    /* adds a gap of 10px between grid items */
+    /* ensures there is space between the grid items */
+    background-color: floralwhite;
+    width: auto;
+    /* sets the width to auto */
+    /* ensures the container stretches to full viewport width */
+    /* stretches to full viewport width */
+    box-sizing: border-box;
+    /* includes border in width */
+    margin: 0;
+    /* removes default margin */
+    padding: 0;
+    /* removes default padding */
+    height: auto;
+    /* Full height of the viewport */
+}
+
+/* Flexbox styles for the about us section */
+.container>div {
+    padding: 10px;
+    text-align: center;
+    /* centers text within each grid item */
+    /* ensures text is centered within each grid item */
+    font-family: Arial, sans-serif;
+    color: #0047AB;
+    /* sets the text color to a shade of blue- cobalt blue */
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: 5px solid orange;
+    background: cornsilk;
+    box-shadow: 5px 5px 2px Silver;
+    width: auto;
+    height: auto;
+}
+
+
+.container>div:target {
+    border: 5px solid #ff00ff;
+    /* highlight border */
+    background-color: #fffbe7;
+    /* optional: highlight background */
+    box-shadow: 0 0 20px 5px #ff00ff33;
+    /* optional: glow effect */
+    transition: all 0.3s;
+}
+
+.container>div:target img {
+    filter: brightness(1.2) contrast(1.2);
+    border: 3px solid #ff00ff;
+}
+
+/* highlight image on target */
+
+/* Flexbox styles for the about us section */
+#rainbow-flagship-mix img,
+#diabetic img,
+#birthday img,
+#bar-mitzvahs img,
+#baby-showers img,
+#corporate-events img,
+#christmas img,
+#halloween img,
+#holi img,
+#divali img {
+    width: 100px;
+    /* sets the width of the images */
+    /* ensures the images do not exceed the container width */
+    height: 100px;
+    /* sets the height of the images */
+    max-width: 100%;
+    /* ensures the images do not exceed the container width */
+    /* sets the maximum width to 100% of the container */
+}
+
+#more-image-container {
+
+    display: flex;
+    /* makes the more image a flex container */
+    justify-content: center;
+    align-items: center;
+    /* centers the image within the container */
+    object-fit: cover;
+    /* ensures the image covers the entire container */
+}
+
+#more-image-container img {
+    width: 100px;
+    /* sets the width of the images */
+    height: 100px;
+    /* sets the height of the images */
+    border-radius: 50%;
+    /* rounds the corners of the images */
+    box-shadow: 5px 5px 5px #FA8072;
+    /* adds a shadow effect with a shade of red- light coral */
+
+}
+
+/* Flexbox styles for the about us section */
+h2,
+h3 {
+    color: #32527b;
+    /* sets the text color to a shade of blue- dark blue */
+    font-weight: bolder;
+    text-transform: Uppercase;
+    display: inline-flex;
+    /* makes the headings a flexbox */
+    justify-self: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    border: 1px ridge Navy;
+    background-color: lightcoral;
+    opacity: 0.90;
+    /* sets the opacity */
+    /* ensures the headings are slightly transparent */
+}
+
+/* Flexbox styles for the about us section */
+.flex-container-sweeties4U-team {
+    background-image: url("./rainbowteam.jpg");
+    background-size: cover;
+    /* covers the entire container */
+    /* ensures the background image covers the entire container */
+    background-repeat: no-repeat;
+    /* prevents repeating the background image */
+    display: flex;
+    /* makes the container a flexbox */
+    font-family: Arial, sans-serif;
+    background-color: peachpuff;
+    color: #0047AB;
+    /* sets the text color to a shade of blue- cobalt blue */
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: 5px ridge #32527b;
+    /* sets the border color to a shade of blue- muted or desaturated blue */
+    /* ensures the border is a muted or desaturated blue */
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px #FA8072;
+    /* adds a shadow effect with a shade of red- light coral */
+    width: 100%;
+    height: auto;
+    padding: 75px;
+    justify-content: center;
+    /* centers items horizontally */
+    align-content: center;
+    /* centers items vertically */
+    align-items: center;
+    /* centers items vertically */
+    /* ensures items are centered within the container */
+    opacity: 1;
+    /* sets the opacity */
+    /* ensures the container is fully opaque */
+    margin: auto auto;
+}
+
+/* Flexbox styles for the about us section */
+.flex-child1-sweeties4U-founder,
+.flex-child2-sweeties4Ufamily {
+    flex: 1;
+    /* allows the flex items to grow and shrink */
+    /* ensures the flex items take up equal space */
+    width: auto;
+    font-family: 'Montserrat', sans-serif;
+    background-color: lemonchiffon;
+    font-weight: bold;
+    margin-right: auto;
+    border: 9px ridge;
+    border-radius: 3px;
+    border-color: #ffb3ba #ffdfba #baffc9 #bae1ff;
+    /* sets the border color to a pastel rainbow-#ffb3ba (Light Pink), #ffdfba (Light Peach), #baffc9 (Light Mint), and #bae1ff (Light Aqua) */
+    box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+    /* adds a shadow effect with multiple colors blue, red, and green */
+    justify-items: center;
+    /* centers items horizontally */
+    /* ensures items are centered within the flex container */
+    align-items: center;
+    /* centers items vertically */
+    /* ensures items are centered within the flex container */
+    text-align: center;
+}
+
+/* Flexbox styles for the about us section */
+.flex-child1-sweeties4U-founder img,
+.flex-child2-sweeties4Ufamily img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    /* sets the maximum width to 100% of the container */
+
+}
+
+
+/* Flexbox styles for the footer section */
+#contactme-footer {
+    font-family: Roboto, sans-serif;
+    justify-content: center;
+    /* centers items horizontally */
+    text-align: center;
+    /* centers text horizontally */
+    margin-top: 20px;
+    /* adds space above the footer */
+    align-self: center;
+}
+
+/* Flexbox styles for the footer section */
+#contactme-footer li {
+    text-decoration: none;
+    /* removes underline from links */
+    list-style-type: none;
+    /* removes bullet points from list items */
+    border: 5px ridge salmon;
+    /* adds a border with a shade of pink */
+    font-weight: bold;
+    /* makes the font bold */
+    font-family: Roboto, sans-serif;
+    /* sets the font family */
+    color: indigo;
+    border-radius: 3px;
+    display: flex;
+    /* makes the list items a flex container */
+    font-size: 1rem;
+    padding: 5px;
+
+
+}
+
+/* Flexbox styles for the footer section */
+#contactme-footer ul {
+    display: inline-flex;
+    /* makes the container a flexbox */
+    align-content: center;
+    /* centers items vertically */
+    justify-content: center;
+    /* centers items horizontally */
+    width: auto;
+    height: auto;
+}
+
+/* class="flex-child2-sweeties4Ufamily">
+      <h3 is sticking out of flex container at 487px and at breakpoint 638px, 568px about us section is misaligned and 499px is when nav bar distorts, 440px is when banner.heading-welcome distorts and 306px is when our products misaligns itself, 298px and 256px is when the welcome banner. the rainbow-heading and logo image distorts and is too small at 282px, distorts and our team section at 224 pixels -very tiny. when in dev tools breakpoint need to adjust styles */
+
+@media screen and (max-width: 638px) {
+
+    /* Styles for mobile devices */
+    #flex-container-about-us {
+        flex-direction: column;
+        /* stacks items vertically */
+        align-items: center;
+        /* centers items horizontally */
+        padding: 20px;
+        /* reduces padding */
+    }
+
+    .flex-child1-our-history,
+    .flex-child2-our-founder {
+        width: 100%;
+        /* sets the width to 100% of the viewport */
+        text-align: center;
+        /* centers text horizontally */
+    }
+
+}
+
+@media screen and (max-width:568px) {
+
+    /* Styles for mobile devices */
+    #contactme-footer {
+        display: flex;
+        flex-direction: column;
+        /* stacks items vertically */
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 569px) {
+    #flex-container-about-us {
+        flex-direction: column;
+        /* stacks items vertically */
+        align-items: center;
+        /* centers items horizontally */
+        padding: 20px;
+        /* reduces padding */
+    }
+}
+
+@media screen and (max-width: 499px) {
+
+    /* Styles for mobile devices */
+    .sweetie4u-navigation ul {
+        flex-direction: column;
+        /* stacks items vertically */
+        align-items: center;
+        /* centers items horizontally */
+    }
+
+    .sweetie4u-navigation ul li {
+        width: 100%;
+        /* sets the width to 100% of the viewport */
+        text-align: center;
+        /* centers text horizontally */
+    }
+}
+
+@media screen and (max-width: 487px) {
+
+    /* Styles for mobile devices */
+    .flex-container-sweeties4U-team {
+        flex-direction: column;
+        /* stacks items vertically */
+        align-items: center;
+        /* centers items horizontally */
+        padding: 20px;
+        /* reduces padding */
+    }
+
+    .flex-child1-sweeties4U-founder,
+    .flex-child2-sweeties4Ufamily {
+        width: 100%;
+        /* sets the width to 100% of the viewport */
+        text-align: center;
+        /* centers text horizontally */
+    }
+
+    .flex-child2-sweeties4Ufamily h3 {
+        font-size: 1.5rem;
+        /* reduces the font size */
+        word-break: break-word;
+        max-width: 100%;
+        padding: 5px 0;
+    }
+
+    .flex-child2-sweeties4Ufamily {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+
+    /* Styles for mobile devices */
+    .banner-heading {
+        font-size: 30px;
+        /* reduces the font size */
+        padding: 10px;
+        /* reduces padding */
+    }
+
+    .rainbow-letters {
+        font-size: 20px;
+        /* reduces the font size */
+    }
+}
+
+@media screen and (max-width: 306px) {
+
+    /* Styles for mobile devices */
+    .container {
+        grid-template-columns: 1fr;
+        /* creates a single column layout */
+        grid-template-rows: auto;
+        /* creates a single row layout */
+    }
+
+    .container>div {
+        font-size: 1rem;
+        /* reduces the font size */
+        padding: 5px;
+        /* reduces padding */
+    }
+}
+
+@media screen and (max-width: 298px) {
+
+    /* Styles for mobile devices */
+    .banner-heading {
+        font-size: 20px;
+        /* reduces the font size */
+        padding: 5px;
+        /* reduces padding */
+    }
+
+    .rainbow-letters {
+        font-size: 15px;
+        /* reduces the font size */
+    }
+}
+
+@media screen and (max-width: 282px) {
+
+    /* Styles for mobile devices */
+    .logo-img {
+        height: 50px;
+        /* reduces the height of the logo */
+        width: auto;
+        /* maintains aspect ratio */
+    }
+
+    .rainbow {
+        font-size: 1.5rem;
+        /* reduces the font size */
+    }
+
+}
+
+
+@media screen and (max-width: 256px) {
+
+    /* Styles for mobile devices */
+    .rainbow-letters {
+        font-size: 10px;
+        /* reduces the font size */
+    }
+
+    .banner-heading {
+        font-size: 15px;
+        /* reduces the font size */
+        padding: 2px;
+        /* reduces padding */
+    }
+}
+
+@media screen and (max-width: 369px) {
+    /* Styles for mobile devices */
+
+    .flex-child1-sweeties4U-founder,
+    .rainbow {
+    .flex-child1-sweeties4U-founder,
+    .rainbow {
+        font-size: 1.5rem;
+        /* reduces the font size */
+        word-break: break-word;
+        max-width: 100%;
+        padding: 5px 0;
+    }
+    .rainbow {
+        width: 100%;
+        /* sets the width to 100% of the viewport */
+        text-align: center;
+        /* centers text horizontally */
+    }
+    }
+}

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html>
+  <!-- Favicon Link showing personalised icon in browser and linking to CSS stylesheet and links to Google Fonts: Roboto and Montserrat-->
+  <!-- Has meta viewport to view on multiple devices and screens-->
+
+  <head>
+    <title>SWEETIES4U-Flexbox style Business Website</title>
+    <!-- Title of the website displayed in the browser tab -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Preconnect to Google Fonts with CORS for security -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link to Google Fonts for Montserrat and Roboto Mono with various weights and styles -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- Link to favicon for the website -->
+    <link rel="stylesheet" href="./styles.css" />
+    <meta charset="utf-8" />
+    <!-- Character encoding for the document -->
+    <meta
+      name="description"
+      content="Sweeties4U is a sweets company offering a wide range of delicious sweets for various occasions. Founded by Mrs. Rachael Rainbow, we provide high quality treats for every celebration."
+    />
+    <!-- Description meta tag closed properly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Viewport settings for responsive design -->
+    <meta
+      name="keywords"
+      content="sweets, candy, desserts, sweets company, events, gifts, parties, sugar-free, low calorie, wedding, birthday, bar mitzvah, baby shower, corporate, christmas, halloween, holi, divali"
+    />
+
+    <!--CSS styling for main banner with background image-->
+    <style>
+      .background-banner {
+        background-image:
+          url("./j.jpg");
+        background-size: cover;
+        /* Cover the entire section with the background image */
+        background-repeat: no-repeat;
+        /* Prevent the background image from repeating */
+        display: flex;
+        /* Use flexbox for layout */
+        justify-content: center;
+        /* Center the content horizontally */
+        align-content: center;
+        /* Center the content vertically */
+        align-items: center;
+        /* Center the content vertically */
+        opacity: 0.80;
+        /* Set the opacity of the background */
+        background-blend-mode: overlay;
+        width: auto;
+        /* Full width of the section */
+        height: 100vh;
+        /* Full height of the viewport */
+        /* Ensures the banner covers the full height of the viewport */
+        min-height: 300px;
+        /* Ensures the banner is visible and responsive */
+        z-index: 5;
+        /* Ensures the banner is above other content */
+        border: 5px ridge Navy;
+        border-radius: 3px;
+        /* Rounded corners for the banner */
+        box-shadow: 5px 5px 5px Seagreen;
+        /* Subtle shadow effect for depth */
+        padding: 4.5rem;
+        /* Padding for the content inside the banner */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header section with visually appealing span rainbow color effect-->
+    <section class="header">
+      <header>
+        <div id="flex-header">
+          <!-- Flexbox container for header elements -->
+          <h1 class="rainbow-letters">
+            <!-- Rainbow effect for the company name -->
+            <span>S</span>
+            <span>W</span>
+            <span>E</span>
+            <span>E</span>
+            <span>T</span>
+            <span>I</span>
+            <span>E</span>
+            <span>S</span>
+            <span>4U</span>
+            <!-- Company name with rainbow effect -->
+          </h1>
+          <img
+            class="logo-img"
+            src="./logo.png"
+            alt="Sweeties4U company logo featuring colorful sweets"
+          />
+          <!-- Logo image with alt text for accessibility -->
+        </div>
+      </header>
+    </section>
+    <!-- Primary navigation with good use of Css class pseudo signifiers and visual feedback methods-->
+    <section class="sweetie4u-navigation">
+      <!-- Navigation section with a class for styling -->
+      <nav>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="#flex-container-about-us">About Us</a></li>
+          <!-- Link to the About Us section -->
+          <li><a href="#our-products">Our Products</a></li>
+          <li><a href="#sweeties4U-team-header">Sweetie-4U Team</a></li>
+          <li><a href="#contactme-footer">Contact Information</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- Appealing rainbow effect 'main'welcome banner; styled in CSS using background linear gradient of colors.-->
+    <main>
+      <section>
+        <div class="background-banner">
+          <!-- Main banner with a background image and gradient overlay -->
+          <span class="banner-heading">Welcome</span
+          ><!-- Main heading with a rainbow effect -->
+        </div>
+      </section>
+    </main>
+
+    <!-- Header section introducting to About Us-->
+    <section class="about-us-header">
+      <!-- Header section introducing the About Us section -->
+      <h2>About Us</h2>
+    </section>
+
+    <!-- About Us section with flexbox layout for history and founder information -->
+    <section>
+      <div id="flex-container-about-us">
+        <!-- Flexbox container for the About Us section -->
+        <div class="flex-child1-our-history">
+          <!-- First child for company history -->
+          <h2>Our History</h2>
+          <p>
+            We have been operating since 2001 delivering delicious sweets to
+            many delighted customers across the world. Our sweets have provided
+            so much joy to adults and children globally.<br />
+            Suitable for many occasions-casual and corporate.Some examples are:
+          </p>
+          <ul>
+            <li><a href="#wedding">Weddings</a></li>
+            <li><a href="#birthday">Birthdays</a></li>
+            <li><a href="#bar-mitzvahs">Bar Mitzvahs</a></li>
+            <li><a href="#baby-showers">Baby Showers</a></li>
+            <li><a href="#corporate-events">Corporate Events</a></li>
+            <li><a href="#christmas">Christmas</a></li>
+            <li><a href="#halloween">Halloween</a></li>
+            <li><a href="#holi">Holi</a></li>
+            <li><a href="#divali">Divali</a></li>
+          </ul>
+        </div>
+        <div class="flex-child2-our-founder">
+          <!-- Second child for founder information -->
+          <h2>Founded by Mrs.Rachael Rainbow</h2>
+          <p>
+            <span class="rainbow">Sweeties4U</span> formed from her devout life
+            as a Hindu.
+          </p>
+          <p>
+            Inspired by the <span class="rainbow">colourful</span> array of
+            Divali 'The Festival of Light' and Holi coupled with her mission to
+            have the beautiful &amp; yummy sweets.
+          </p>
+          <p>
+            Check out our products section for details on our bestseller
+            <span class="rainbow"
+              ><a href="#rainbow-flagship-mix">RainbowSweeties4U</a></span
+            >. Also special
+            <span class="rainbow"><a href="#diabetic">diabetic</a></span> and
+            low calorie sweets.
+          </p>
+          <p>Look out for offers &amp; discounts</p>
+          <p>
+            Due to growing demand: Keep an eye out for stores opening in your
+            area.<em>(online-only at present)</em>
+          </p>
+          <div class="image-jar">
+            <!-- Div for the image of a jar of sweets -->
+            <!-- Lovely image with alt description for screen readers -->
+            <img
+              src="./jarsweets.jpg"
+              alt="Glass jar filled with colorful assorted sweets sitting on a bright table surrounded by scattered candies. The scene feels cheerful and inviting, evoking a sense of nostalgia and delight. No visible text."
+            />
+          </div>
+          <!-- Lovely image with alt description for screen readers-->
+        </div>
+      </div>
+    </section>
+
+    <!-- Header section introducing the our products section-->
+    <section class="our-products-header">
+      <h2>Our Products: Prices starting from £10 per kg of sweets.</h2>
+    </section>
+
+    <!-- Products section with images and alt descriptions for accessibility purposes -->
+    <section id="our-products">
+      <!-- Section for products with an ID for linking -->
+      <div class="container">
+        <!-- Container for product items -->
+        <div id="rainbow-flagship-mix">
+          <!-- Flagship product section -->
+          Bestseller <span class="rainbow">'Rainbow Sweetie4U'</span>
+          <img
+            src="./1.jpg"
+            alt="Assorted brightly colored gummy sweets including rings, fruit slices, and worms piled together in a vibrant display. The sweets are covered in sugar and arranged in a market-style setting with a cheerful and playful atmosphere. No visible text."
+          />
+        </div>
+        <div id="diabetic">
+          <!-- Diabetic sweets section -->
+          Diabetic
+          <img
+            src="./sugarfreesweets.jpeg"
+            alt="Assorted sugar-free sweets in various bright colors arranged in a decorative bowl on a clean white table. The sweets are organized in a tidy and inviting way, with soft daylight highlighting their glossy surfaces. The setting feels fresh and health-conscious, creating a sense of reassurance and care. No visible text."
+          />
+        </div>
+        <!-- Wedding sweets section -->
+        <div id="wedding">
+          Wedding
+          <img
+            src="./weddingsweets.jpeg"
+            alt="Sugared almonds arranged in elegant white and pastel packaging on a wedding table adorned with fresh flowers and satin ribbons. The setting is festive and romantic, creating a joyful and celebratory mood. No visible text."
+          />
+        </div>
+        <!-- Birthday sweets section -->
+        <div id="birthday">
+          Birthday
+          <img
+            src="./birthdaysweets.jpg"
+            alt="Birthday party table set with rainbow-themed plates and cups arranged around a centerpiece of colorful sweets and candies. The table is decorated with balloons and festive treats, creating a joyful and celebratory atmosphere. No visible text."
+          />
+        </div>
+        <!-- Bar Mitzvahs sweets section -->
+        <div id="bar-mitzvahs">
+          Bar Mitzvahs selection
+          <img
+            src="./barmitzvahsweets.jpg"
+            alt="Assorted sweets and chocolates arranged on a table with blue and silver decorations for a Bar Mitzvah celebration. The environment is festive and welcoming."
+          />
+        </div>
+        <!-- Baby Showers sweets section -->
+        <div id="baby-showers">
+          Baby Showers
+          <img
+            src="./babyshowersweets.jpg"
+            alt="Pastel-colored sweets and candies displayed in decorative jars and trays on a baby shower table with soft decorations and a gentle, joyful atmosphere."
+          />
+        </div>
+        <!-- Corporate events sweets section -->
+        <div id="corporate-events">
+          Corporate Set
+          <img
+            src="./corporatesweets.jpg"
+            alt="Elegant selection of sweets in branded packaging arranged on a modern table with business-themed decorations. The scene feels professional and inviting."
+          />
+        </div>
+        <!-- Christmas sweets section -->
+        <div id="christmas">
+          Festive Set
+          <img
+            src="./christmassweets.jpeg"
+            alt="Red and white candy canes and festive sweets displayed with Christmas ornaments and greenery on a decorated holiday table. The mood is warm and festive."
+          />
+        </div>
+        <!-- Halloween sweets section -->
+        <div id="halloween">
+          Scary selection
+          <img
+            src="./halloweensweets.jpg"
+            alt="Halloween-themed sweets shaped like pumpkins and ghosts arranged on a table with spooky decorations and cobwebs. The tone is fun and playful."
+          />
+        </div>
+        <!-- Holi sweets section -->
+        <div id="holi">
+          Holi Colors
+          <img
+            src="./holisweets.jpg"
+            alt="Brightly colored sweets in vibrant hues displayed on a table with Holi festival powders and decorations. The environment is lively and energetic."
+          />
+        </div>
+        <!-- Divali sweets section with an image of colorful sweets -->
+        <div id="divali">
+          Light Festival Set
+          <img
+            src="./divalisweets.jpeg"
+            alt="A variety of colorful Indian sweets displayed on ornate trays for Divali, surrounded by marigold flowers and glowing string lights. The sweets are neatly arranged and include different shapes and colors, creating a festive and joyful atmosphere. The environment feels warm and celebratory, evoking a sense of togetherness and happiness. No visible text."
+          />
+        </div>
+        <!-- Placeholder for more products -->
+        <div id="more-image-container">
+          More Soon...
+          <img
+            src="./more.jpg"
+            alt="A variety of sweets displayed in a colorful arrangement, showcasing an assortment of candies and treats. The image is bright and inviting, with a playful and cheerful atmosphere."
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- A header section introducing Sweeties4U Teams section-->
+    <section id="sweeties4U-team-header">
+      <h2>Sweeties4U Team</h2>
+    </section>
+
+    <!-- A section briefly introducing Sweeties4U team - founder and key people-->
+    <section class="flex-container-sweeties4u-team">
+      <div class="flex-child1-sweeties4U-founder">
+        <h3>Mrs Rachael <span class="rainbow">Rainbow</span></h3>
+        <p>
+          The founder of <span class="rainbow">Sweeties4U</span> is married and
+          has 5 children and a dog called Sweeties.Loves Zumba, food and
+          painting. Still passionate about her sweets and the rainbow colors
+        </p>
+        <img
+          src="./MrsRainbow.jpg"
+          alt="Mrs Rachael Rainbow smiling warmly while standing in a colorful sweets shop surrounded by jars of assorted candies. She appears friendly and welcoming, creating a cheerful and inviting atmosphere. No visible text."
+        />
+      </div>
+      <div class="flex-child2-sweeties4Ufamily">
+        <h3>
+          Chefs,designers, customer service and many in our growing
+          <span class="rainbow"> Sweeties4U </span> family.
+        </h3>
+        <p>
+          Our workers are talented chefs such as Milo and Layla spend countless
+          hours developing new tasty sweets. They are married and have 1 son
+          togther. They enjoy swimming.and travelling. We have numerous workers
+          who design, customer service and work with Mrs Rainbow to keep
+          Sweeties4U alive. Do contact us if you are interested in joining our
+          'colourful' family.
+        </p>
+        <img
+          src="./rainbowteam.jpg"
+          alt="A diverse group of Sweeties4U team members smiling and collaborating around a table filled with colorful sweets and packaging materials in a bright and cheerful workspace. The environment feels lively and welcoming, conveying a sense of teamwork and joy. No visible text."
+        />
+      </div>
+    </section>
+
+    <!-- A section footer with contact information-->
+
+    <section id="contactme-footer">
+      <footer>
+        <ul>
+          <li>&copy; Sweeties4U 2001</li>
+          <li>Email: sweeties4U@gmail.com</li>
+          <li>Phone: 02089671111</li>
+          <li>Address: 123 Rainbow Lane, Sweet City, UK</li>
+        </ul>
+      </footer>
+    </section>
+  </body>
+</html>
+
+<!-- End of HTML document -->
+<!-- This is a simple business website for a sweets company called Sweeties4U. It uses HTML and CSS to create a visually appealing layout with sections for the company history, products, team, and contact information. -->
